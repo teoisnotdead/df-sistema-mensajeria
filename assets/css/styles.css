@@ -1,5 +1,5 @@
 :root {
-  --font-roboto: 'Roboto', sans-serif;
+  --font-roboto: 'Open Sans', sans-serif;
   --color-blue-bell: #a491d2;
   --color-soap: #cdc3e6;
   --color-pale-lavender: #d4dcff;
@@ -15,15 +15,133 @@
   --font-x-small: 0.625rem;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html,
-body {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+input {
   font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
+}
+
+.nav-chat {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid var(--color-platinum);
+}
+
+.user-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 2px solid var(--color-platinum);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  margin-right: 10px;
+}
+
+.user-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--color-platinum);
+}
+
+.user-profile .user-data h3 {
+  font-size: var(--font-medium);
+  color: var(--color-dark-jungle);
+}
+
+.user-profile .user-data p {
+  font-size: var(--font-x-small);
+  color: var(--color-gray);
+  font-weight: 300;
+}
+
+.action-menu {
+  display: flex;
+  align-items: center;
+  color: var(--color-gray);
+}
+
+.action-menu i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.action-menu i + i {
+  margin-left: 15px;
+}
+
+.action-menu i:hover {
+  cursor: pointer;
+}
+
+.new-chat {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--color-platinum);
+}
+
+.new-chat button {
+  color: var(--color-white);
+  padding: 10px 60px;
+  font-size: 1.2rem;
+  background-color: var(--color-blue-bell);
+  border: none;
+}
+
+.new-chat button:hover {
+  background-color: var(--color-soap);
+}
+
+.new-chat button:focus {
+  background-color: var(--color-old-silver);
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 40px;
+  border-bottom: 2px solid var(--color-platinum);
+  cursor: pointer;
+  /* flex: 0 0 200px; */ /* revisar como se comporta */
+}
+
+.chat-item .user-image img {
+  width: 70px;
+  height: 70px;
+}
+
+.chat-item .user-data h3 {
+  font-weight: 500;
+}
+
+.chat-item .user-data p {
+  font-size: var(--font-small);
 }
