@@ -1,0 +1,29 @@
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+  --color-blue-bell: #a491d2;
+  --color-soap: #cdc3e6;
+  --color-pale-lavender: #d4dcff;
+  --color-white: #fff;
+  --color-platinum: #e8ebe4;
+  --color-gray: #bec1bb;
+  --color-dark-jungle: #1b1f21;
+  --color-outer-space: #444749;
+  --color-old-silver: #828485;
+  --font-large: 2.8125rem;
+  --font-medium: 1rem;
+  --font-small: 0.875rem;
+  --font-x-small: 0.625rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
