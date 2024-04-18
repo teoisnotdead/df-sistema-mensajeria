@@ -136,6 +136,11 @@ input {
   border-bottom: 2px solid var(--color-platinum);
 }
 
+.chat-item:hover {
+  background-color: var(--color-pale-lavender);
+  cursor: pointer;
+}
+
 .chat-item .user-image img {
   width: 70px;
   height: 70px;
